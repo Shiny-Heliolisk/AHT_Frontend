@@ -18,8 +18,13 @@
     <!-- font Opensans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- import thư viện slick.css -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Owl Stylesheets -->
+    <!-- <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet"
+        href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.theme.default.min.css"> -->
+    <link rel="stylesheet"
+        href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
 
     <!-- import file .less -->
     <link rel="stylesheet/less" type="text/css" href="nhap.less" />
@@ -86,6 +91,8 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">collections</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Favourite</a></li>
                 </ul>
             </div>
         </div>
@@ -93,8 +100,9 @@
         <div class="content">
             <div class="banners">
                 <div class="banner-left">
-                    <img src="images/banner_01.jpg" alt="banner 01">
                     <span>Two High-end Materials</span>
+                    <img src="images/banner_01.jpg" alt="banner 01">
+                    
                     <a href="#">shop now</a>
 
                 </div>
@@ -251,206 +259,202 @@
 
                 </div>
             </div>
-            <div class="blog">
+            <div class="blog large-12 columns">
                 <div class="blog-title">
                     <span class="latest">latest</span><br>
                     <span class="news-events">news & events</span><br>
                     <div class="title-line"></div>
                 </div>
-                <div id="wrap" class="blog-contents">
-
-                    <ul id="thumbnail_slider">
-                        <li class="thumbnail-item">
+                <div class="blog-contents owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_1.jpg" alt="blog 1">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    In commodo dolor vitae
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_2.jpg" alt="blog 2">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Vivamus non dignissim elit
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_3.jpg" alt="blog 3">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Ut lacinia erat ut diam volutpat
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"> 6</i></span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_1.jpg" alt="blog 1">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    In commodo dolor vitae
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_2.jpg" alt="blog 2">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Vivamus non dignissim elit
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"> 6</i></span>
                                 </div>
                             </div>
-                        </li>
-                        <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_3.jpg" alt="blog 3">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Ut lacinia erat ut diam volutpat
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li>
-                        <!-- <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_1.jpg" alt="blog 1">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    In commodo dolor vitae
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li> -->
-                        <!-- <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_2.jpg" alt="blog 2">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Vivamus non dignissim elit
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li> -->
-                        <!-- <li class="thumbnail-item">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
                             <img src="images/blog_3.jpg" alt="blog 3">
                             <div class="content-margin">
                                 <div class="blog-content-title">
-                                    <a href="#">Ut lacinia erat ut diam volutpat</a>
+                                    Ut lacinia erat ut diam volutpat
                                 </div>
                                 <div class="blog-content-description">
                                     <p>
                                         Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
                                         hendrerit,
-                                        elit a
-                                        lacinia suscipit, orci
-                                        mauris.
+                                        elit a lacinia suscipit, orci mauris.
                                     </p>
                                 </div>
                                 <div class="icons">
-                                    <a href="#"><i class="far fa-comment"></i> 12</a>
-                                    <a href="#"><i class="far fa-heart"> 6</i></a>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 6</span>
                                 </div>
                             </div>
-                        </li> -->
-
-                    </ul>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -539,8 +543,9 @@
     <script src="https://kit.fontawesome.com/4e7d627ffb.js" crossorigin="anonymous"></script>
     <!-- thư viện jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- import thư viện slick.js  -->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- owl-carousel.js  --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
     <!-- import file js -->
     <script src="nhap.js"></script>
 </body>

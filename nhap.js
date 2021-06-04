@@ -14,36 +14,41 @@ $(document).ready(function () {
     $("#dropdown3").toggleClass("rotate");
   });
 });
-// slick blog contents 
-$(function(){
-  
-  $("#thumbnail_slider").slick({
-    slidesToShow: 3,
-    slidesToScroll:2,
-    speed: 1000,    
-    dots:true,
-    infinite:true,
-    // autoplay:true,
-    autoplaySpeed:3000,
-    arrows:false,
-    // centerMode:true,
-    // centerPadding:'50px',
-  });
-});
 
 // responsive menu
 var isCalledOne = true;
+
 function myFunction(x) {
   x.classList.toggle("change");
   if (isCalledOne) {
-    document.getElementsByClassName("sidenav")[0].style.height = "400px";
+    document.getElementsByClassName("sidenav")[0].style.height = "500px";
     isCalledOne = false;
-  }
-  else {
+  } else {
     document.getElementsByClassName("sidenav")[0].style.height = "0px";
     isCalledOne = true;
   }
 
 }
 
+// slick blog contents 
+$(document).ready(function () {
+  $('.blog-contents').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    slideBy: 3,
+    dotsEach: 3,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        dotsEach: 1,
+      },
 
+      1160: {
+        items: 3
+      }
+    }
+  });
+});

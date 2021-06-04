@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- head -->
+
+  <title>
+    Test | Owl Carousel | 2.3.4
+  </title>
+
+  <!-- Stylesheets -->
+  Đây là nhúng
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+  <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+  <!-- javascript -->
+  <script src="../assets/vendors/jquery.min.js"></script>
+  <script src="../assets/owlcarousel/owl.carousel.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <!--  Demos -->
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img src="images/blog_2.jpg" alt="blog 2">
+      <div class="content-margin">
+        <div class="blog-content-title">
+          <a href="#">Ut lacinia erat ut diam volutpat</a>
+        </div>
+        <div class="blog-content-description">
+          <p>
+            Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
+            hendrerit,
+            elit a
+            lacinia suscipit, orci
+            mauris.
+          </p>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="far fa-comment"></i> 12</a>
+          <a href="#"><i class="far fa-heart"> 6</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/blog_1.jpg" alt="blog 2">
+      <div class="content-margin">
+        <div class="blog-content-title">
+          <a href="#">Ut lacinia erat ut diam volutpat</a>
+        </div>
+        <div class="blog-content-description">
+          <p>
+            Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean
+            hendrerit,
+            elit a
+            lacinia suscipit, orci
+            mauris.
+          </p>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="far fa-comment"></i> 12</a>
+          <a href="#"><i class="far fa-heart"> 6</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <h4>3</h4>
+    </div>
+    <div class="item">
+      <h4>4</h4>
+    </div>
+    <div class="item">
+      <h4>5</h4>
+    </div>
+    <div class="item">
+      <h4>6</h4>
+    </div>
+    <div class="item">
+      <h4>7</h4>
+    </div>
+    <div class="item">
+      <h4>8</h4>
+    </div>
+    <div class="item">
+      <h4>9</h4>
+    </div>
+    <div class="item">
+      <h4>10</h4>
+    </div>
+    <div class="item">
+      <h4>11</h4>
+    </div>
+    <div class="item">
+      <h4>12</h4>
+    </div>
+  </div>
+
+
+
+
+  Đâu là js cài đặt
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
