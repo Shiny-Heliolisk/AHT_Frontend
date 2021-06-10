@@ -18,8 +18,7 @@
 @footer-main-link: #888888;
 @star-on: #f8ba04;
 @star-off: #d1d1d1;
-
-@blog-background: url("../images/background.jpg");
+@blog-background: url("..//images/background.jpg");
 
 
 html {
@@ -175,12 +174,13 @@ html {
 }
 
 .content {
-	max-width: 1920px;
 	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .banners {
-	max-width: 1140px;
+	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -223,6 +223,8 @@ html {
 
 	img {
 		height: 100%;
+		min-width: 520px;
+
 	}
 
 	>a {
@@ -256,8 +258,8 @@ html {
 		font-family: "Montserrat";
 		position: absolute;
 		text-transform: uppercase;
-		top: 83px;
-		left: 57px;
+		top: 42%;
+		left: 16%;
 	}
 
 	#make-dif {
@@ -266,8 +268,8 @@ html {
 		font-size: 20px;
 		text-transform: uppercase;
 		position: absolute;
-		bottom: 66px;
-		left: 55px;
+		bottom: 34%;
+		left: 16%;
 	}
 
 }
@@ -288,8 +290,8 @@ html {
 	margin-top: 30px;
 
 	>a {
-		bottom: 110px;
-		left: 43px;
+		bottom: 33%;
+		left: 12%;
 	}
 
 	#folio {
@@ -299,8 +301,8 @@ html {
 		font-weight: 400;
 		font-family: "Montserrat";
 		position: absolute;
-		top: 118px;
-		left: 39px;
+		top: 36%;
+		left: 11%;
 		text-transform: uppercase;
 	}
 
@@ -310,8 +312,8 @@ html {
 		font-size: 20px;
 		text-transform: uppercase;
 		position: absolute;
-		bottom: 163px;
-		left: 39px;
+		bottom: 49%;
+		left: 11%;
 	}
 }
 
@@ -325,7 +327,7 @@ html {
 }
 
 .main-content {
-	max-width: 1140px;
+	max-width: 1170px;
 	width: 100%;
 	height: 100%;
 	margin-left: auto;
@@ -369,49 +371,45 @@ html {
 	margin-bottom: 32px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	min-height: 911px;
 	height: auto;
-}
 
-.products-line-1 {
-	display: flex;
-	justify-content: space-between;
-}
+	.items {
+		padding: 0 15px;
 
-.products-line-2 {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 43px;
-}
+		.picture {
+			width: 262px;
+			height: 323px;
+			position: relative;
 
-.picture {
-	width: 262px;
-	height: 323px;
-	position: relative;
+			a {
+				width: 120px;
+				height: 40px;
+				box-sizing: border-box;
+				position: absolute;
+				bottom: 6px;
+				left: 5px;
+				padding: 9px 18px;
+				background-color: @white;
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 26px;
+				color: #424242;
+				font-weight: 400;
+				font-family: 'Montserrat';
 
-	a {
-		width: 120px;
-		height: 40px;
-		box-sizing: border-box;
-		position: absolute;
-		bottom: 6px;
-		left: 5px;
-		padding: 9px 18px;
-		background-color: @white;
-		text-transform: uppercase;
-		font-size: 12px;
-		line-height: 26px;
-		color: #424242;
-		font-weight: 400;
-		font-family: 'Montserrat';
-
-		&:hover {
-			text-decoration: none;
-			color: @violet;
+				&:hover {
+					text-decoration: none;
+					color: @violet;
+				}
+			}
 		}
 	}
 }
+
+
+
+
 
 
 .detail {
@@ -586,7 +584,7 @@ html {
 						color: @icons;
 						font-size: 14px;
 					}
-					
+
 				}
 			}
 		}
@@ -605,7 +603,7 @@ html {
 	padding-top: 58px;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1140px;
+	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 4px;
@@ -824,12 +822,7 @@ table {
 }
 
 @media screen and (max-width:725px) {
-	.products {
-		flex-direction: column;
-		width: auto;
-		text-align: center;
-		align-items: center;
-	}
+
 
 	.header-left {
 		display: none;
@@ -846,19 +839,24 @@ table {
 
 	.banner-left {
 		span {
-			position: relative;
-			top: 0;
-			left: 0;
+			font-size: 24px;
+			position: absolute;
+			top: 30%;
+			right: 10%;
 		}
 
 		a {
 			bottom: 20%;
-			right: 20%;
+			right: 30%;
 		}
 	}
 }
 
 @media screen and (max-width:936px) {
+	.banner-right{
+		display: block !important;
+		height: auto !important;
+	}
 	.footer-main {
 		margin-left: 1%;
 		padding-top: 0;
@@ -923,24 +921,33 @@ table {
 	}
 
 	.banner-right {
-		display: none;
+		display: flex;
+		max-width: none;
+		align-items: center;
+		height: 250px;
+		overflow: hidden;
+		margin-top: 10px;
+
+		.banner-right-top {
+			margin-right: 10px;
+		}
 	}
 
 	.banner-left {
+		max-width: none;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
 	.main-content {
-		max-width: 750px;
-		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.products {
-		display: flex;
-		justify-content: space-between;
+		margin-right: auto;
+		margin-left: auto;
+		justify-content: center;
 	}
 
 
@@ -954,6 +961,18 @@ table {
 	}
 }
 
+@media screen and (max-width:1170px) {
+	.products {
+		justify-content: center;
+		margin-top: 25px;
+		margin-bottom: 32px;
+
+		.items {
+			padding: 0 10px;
+			margin-bottom: 50px;
+		}
+	}
+}
 
 @media screen and (max-width:1329px) {
 	.main-menu {
