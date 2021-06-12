@@ -19,7 +19,8 @@
 @star-on: #f8ba04;
 @star-off: #d1d1d1;
 @blog-background: url("..//images/background.jpg");
-@width: 1860/1920*100%;
+@width-outer: 1860/1920*100%;
+@witdh-inner: 1140px;
 
 
 .wrap {
@@ -40,7 +41,7 @@
 	display: flex;
 
 	.header-wrap {
-		width: @width;
+		width: @width-outer;
 		display: flex;
 		margin: 0 auto;
 
@@ -95,7 +96,7 @@
 
 .main-menu {
 	display: flex;
-	width: @width;
+	width: @width-outer;
 	margin: 0 auto;
 	height: 79/125*100%;
 
@@ -187,27 +188,22 @@
 	}
 }
 
-
-
-
-
-
-
-
-
 .content {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	width: @width-outer;
 }
 
 .banners {
-	max-width: 1170px;
+	max-width: 1140px;
+	width: @witdh-inner;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	margin-bottom: 80px;
 	height: 100%;
+	justify-content: space-between;
 
 	a {
 		&:hover {
@@ -234,122 +230,118 @@
 		width: 100%;
 		height: 100%;
 	}
-}
 
-.banner-left {
-	max-width: 750px;
-	width: 100%;
-	position: relative;
-	margin-right: 30px;
-	height: 100%;
-
-	img {
+	.banner-left {
+		max-width: 750px;
+		width: 750/1140px*100%;
+		position: relative;
 		height: 100%;
-		min-width: 520px;
-
+	
+		img {
+			width: 100%;
+		}
+	
+		>a {
+			bottom: 152px;
+			right: 94px;
+		}
+	
+		span {
+			font-size: 30px;
+			color: @black;
+			font-weight: 600;
+			font-family: "Pacifico";
+			position: absolute;
+			bottom: 200px;
+			right: 95px;
+		}
 	}
 
-	>a {
-		bottom: 152px;
-		right: 94px;
-	}
+	.banner-right {
+		max-width: 360px;
+		width: 360/1140*100%;
+		
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		.banner-right-top {
+			width: 100%;
+			height: auto;
+			position: relative;
+	
+			#small-thing {
+				font-size: 16px;
+				letter-spacing: 3px;
+				color: #616161;
+				font-weight: 400;
+				font-family: "Montserrat";
+				position: absolute;
+				text-transform: uppercase;
+				top: 42%;
+				left: 16%;
+			}
+	
+			#make-dif {
+				font-family: 'Montserrat';
+				font-weight: 700;
+				font-size: 20px;
+				text-transform: uppercase;
+				position: absolute;
+				bottom: 34%;
+				left: 16%;
+			}
+		}
 
-	span {
-		font-size: 30px;
-		color: @black;
-		font-weight: 600;
-		font-family: "Pacifico";
-		position: absolute;
-		bottom: 200px;
-		right: 95px;
-	}
-}
+		.banner-right-bot {
+			width: 100%;
+			height: auto;
+			position: relative;
 
-.banner-right {
-	max-width: 360px;
-	width: 100%;
-	position: relative;
-	height: 100%;
-
-
-	#small-thing {
-		font-size: 16px;
-		letter-spacing: 3px;
-		color: #616161;
-		font-weight: 400;
-		font-family: "Montserrat";
-		position: absolute;
-		text-transform: uppercase;
-		top: 42%;
-		left: 16%;
-	}
-
-	#make-dif {
-		font-family: 'Montserrat';
-		font-weight: 700;
-		font-size: 20px;
-		text-transform: uppercase;
-		position: absolute;
-		bottom: 34%;
-		left: 16%;
-	}
-
-}
-
-.banner-right-top {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.banner-right-bot {
+			a {
+				bottom: 33%;
+				left: 12%;
+				&:hover {
+					text-decoration: none;
+					color: @white;
+				}
+			}
 
 
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	position: relative;
-	margin-top: 30px;
+			#folio {
+				font-size: 16px;
+				letter-spacing: 3px;
+				color: #616161;
+				font-weight: 400;
+				font-family: "Montserrat";
+				position: absolute;
+				top: 36%;
+				left: 11%;
+				text-transform: uppercase;
+			}
 
-	>a {
-		bottom: 33%;
-		left: 12%;
-	}
-
-	#folio {
-		font-size: 16px;
-		letter-spacing: 3px;
-		color: #616161;
-		font-weight: 400;
-		font-family: "Montserrat";
-		position: absolute;
-		top: 36%;
-		left: 11%;
-		text-transform: uppercase;
-	}
-
-	#backpack {
-		font-family: 'Montserrat';
-		font-weight: 700;
-		font-size: 20px;
-		text-transform: uppercase;
-		position: absolute;
-		bottom: 49%;
-		left: 11%;
-	}
-}
-
-.shop-now {
-	a {
-		&:hover {
-			text-decoration: none;
-			color: @white;
+			#backpack {
+				font-family: 'Montserrat';
+				font-weight: 700;
+				font-size: 20px;
+				text-transform: uppercase;
+				position: absolute;
+				bottom: 49%;
+				left: 11%;
+			}
 		}
 	}
 }
 
+
+
+
+
+
+
 .main-content {
-	max-width: 1170px;
+	max-width: 1140px;
 	width: 100%;
 	height: 100%;
 	margin-left: auto;
@@ -397,11 +389,12 @@
 	height: auto;
 
 	.items {
-		padding: 0 15px;
+		// padding: 0 15px;
+		width: 263/1140*100%;
 
 		.picture {
-			width: 262px;
-			height: 323px;
+			width: 100%;
+			height: auto;
 			position: relative;
 
 			a {
@@ -889,10 +882,6 @@ table {
 }
 
 @media screen and (max-width:936px) {
-	.banner-right {
-		display: block !important;
-		height: auto !important;
-	}
 
 	.footer-main {
 		margin-left: 1%;
@@ -990,26 +979,31 @@ table {
 	}
 
 	.banners {
-		display: block;
-	}
-
-	.banner-right {
-		display: flex;
-		max-width: none;
-		align-items: center;
-		height: 250px;
-		overflow: hidden;
-		margin-top: 10px;
-
-		.banner-right-top {
-			margin-right: 10px;
+		flex-direction: column;
+		width: 100%;
+		.banner-left {
+			max-width: none;
+			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
 		}
-	}
-
-	.banner-left {
-		max-width: none;
-		margin-right: auto;
-		margin-left: auto;
+		.banner-right{
+			flex-direction: row;
+			width: 100%;
+			max-width: none;
+			justify-content: center;
+			overflow: hidden;
+			align-items: center;
+			height: 300px;
+			margin-top: 2%;
+			.banner-right-top{
+				margin-right: 2%;
+				height: 100%;
+			}
+			.banner-right-bot{
+				height: 100%;
+			}
+		}
 	}
 
 	.main-content {
@@ -1032,22 +1026,24 @@ table {
 	.blog-contents {
 		width: 360px !important;
 	}
+
 	.products {
 		justify-content: center;
 		margin-top: 25px;
 		margin-bottom: 32px;
-	
+
 		.items {
-			padding: 0 10px;
+			// padding: 0 10px;
 			margin-bottom: 50px;
 		}
 	}
 }
+
 @media screen and(max-width:1250px) {
-	.main-menu{
-		.nav{
-			ul{
-				li{
+	.main-menu {
+		.nav {
+			ul {
+				li {
 					padding: 0 2%;
 				}
 			}
