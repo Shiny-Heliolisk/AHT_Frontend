@@ -38,7 +38,7 @@ $(document).ready(function () {
     nav: false,
     slideBy: 3,
     dotsEach: 3,
-    // autoplay: true,
+    autoplay: true,
     autoplayHoverPause: true,
     responsive: {
       0: {
