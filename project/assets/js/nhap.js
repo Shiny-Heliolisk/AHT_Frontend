@@ -38,14 +38,18 @@ $(document).ready(function () {
     nav: false,
     slideBy: 3,
     dotsEach: 3,
-    autoplay: true,
+    // autoplay: true,
     autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
         dotsEach: 1,
       },
-
+      800:{
+        items: 2,
+        slideBy:1,
+        dotsEach:1,
+      },
       1160: {
         items: 3
       }
