@@ -45,7 +45,7 @@
 	.header-wrap {
 		width: @width-outer;
 		box-sizing: border-box;
-		padding: 0 15px;
+		padding: 0 30px;
 		display: flex;
 		margin: 0 auto;
 
@@ -102,14 +102,14 @@
 	display: flex;
 	width: @width-outer;
 	box-sizing: border-box;
-	padding: 0 15px;
+	padding: 0 30px;
 	margin: 0 auto;
 	height: 79/125*100%;
 
 	.logo {
 		width: 360/1860*100%;
 		display: flex;
-
+		// margin-left: 15px;
 		img {
 			width: auto;
 			height: auto;
@@ -200,7 +200,7 @@
 	margin-right: auto;
 	width: @width-outer;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 0 15px;
 }
 
 .banners {
@@ -361,6 +361,7 @@
 
 .title {
 	height: 100px;
+	margin-bottom: 25px;
 }
 
 .franco {
@@ -484,6 +485,7 @@
 }
 
 .blog {
+	margin-top: 30px;
 	height: auto;
 	background-image: @blog-background;
 	padding-bottom: 55px;
@@ -491,7 +493,7 @@
 	.blog-inner {
 		width: @width-outer;
 		box-sizing: border-box;
-		padding: 15px;
+		padding:0 30px;
 		margin: 0 auto;
 
 		.blog-title {
@@ -510,6 +512,8 @@
 			}
 
 			.news-events {
+				display: block;
+				margin-top: 5px;
 				font-size: 24px;
 				letter-spacing: 2px;
 				color: @black;
@@ -524,7 +528,7 @@
 				background-color: @violet;
 				margin-left: auto;
 				margin-right: auto;
-				margin-top: 20px;
+				margin-top: 18px;
 			}
 		}
 
@@ -633,15 +637,19 @@
 	height: auto;
 	background-color: @header;
 }
-
+.footer-main-outer{
+	width: 100%;
+	box-sizing: border-box;
+	padding:0 30px;
 .footer-main {
 	display: flex;
 	justify-content: space-between;
 	max-width: @width-inner;
-	box-sizing: border-box;
-	padding: 58px 15px 4px;
+	
+	padding: 58px 0 0;
 	margin-left: auto;
 	margin-right: auto;
+}
 }
 
 .column-besides {
@@ -854,7 +862,7 @@ table {
 	border-top: solid 1px @footer-line;
 	width: @width-outer;
 	box-sizing: border-box;
-	padding: 0 15px;
+	padding: 0 30px;
 	.footer-end-wrap {
 		display: flex;
 		width: @width-inner;
@@ -992,8 +1000,8 @@ table {
 
 	.products {
 
-		margin-top: 25px;
-		margin-bottom: 32px;
+		// margin-top: 25px;
+		// margin-bottom: 32px;
 
 
 		.items {
