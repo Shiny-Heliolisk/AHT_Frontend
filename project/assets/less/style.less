@@ -4,6 +4,7 @@
 }
 
 @violet: #8262b5;
+@input-border:rgb(42, 174, 192);
 @in-active-dots: #ccc0e1;
 @semi-black: #525252;
 @black: #000000;
@@ -19,7 +20,7 @@
 @star-on: #f8ba04;
 @star-off: #d1d1d1;
 @footer-char: #818181;
-@footer-line:#393939;
+@footer-line: #393939;
 @blog-background: url("..//images/background.jpg");
 @width-outer: 100%;
 @width-inner: 1140px;
@@ -109,6 +110,7 @@
 	.logo {
 		width: 360/1860*100%;
 		display: flex;
+
 		// margin-left: 15px;
 		img {
 			width: auto;
@@ -145,7 +147,7 @@
 					text-transform: uppercase;
 					text-decoration: none;
 					cursor: pointer;
-					// padding: 26px 26px;
+					// padding: 26px 0;
 					font-weight: 700;
 					font-family: 'Montserrat';
 					// display: block;
@@ -200,7 +202,7 @@
 	margin-right: auto;
 	width: @width-outer;
 	box-sizing: border-box;
-	padding: 0 15px;
+	padding: 0 30px;
 }
 
 .banners {
@@ -408,13 +410,14 @@
 		// width: 25%;
 		// margin:0 15px;
 		// margin-right: 30px;
-		
+
 
 		.picture {
 			// width: 100%;
 			height: auto;
 			position: relative;
-			img{
+
+			img {
 				width: 100%;
 			}
 
@@ -493,7 +496,7 @@
 	.blog-inner {
 		width: @width-outer;
 		box-sizing: border-box;
-		padding:0 30px;
+		padding: 0 30px;
 		margin: 0 auto;
 
 		.blog-title {
@@ -637,19 +640,21 @@
 	height: auto;
 	background-color: @header;
 }
-.footer-main-outer{
+
+.footer-main-outer {
 	width: 100%;
 	box-sizing: border-box;
-	padding:0 30px;
-.footer-main {
-	display: flex;
-	justify-content: space-between;
-	max-width: @width-inner;
-	
-	padding: 58px 0 0;
-	margin-left: auto;
-	margin-right: auto;
-}
+	padding: 0 30px;
+
+	.footer-main {
+		display: flex;
+		justify-content: space-between;
+		max-width: @width-inner;
+
+		padding: 58px 0 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .column-besides {
@@ -854,6 +859,35 @@ table {
 	justify-content: center;
 }
 
+.responsive-search {
+	// display: flex;
+	
+	display: none;
+	width: @width-outer;
+	box-sizing: border-box;
+	padding: 0 30px;
+	margin-top: 10px;
+	// display: none;
+	button{
+		background: none;
+		border: none;
+		
+		// border:solid 1px @semi-black;
+		width: 5%;
+		// padding: 0 5px;
+		i{
+			font-size: 30px;
+		}
+	}
+	input{
+		outline: none;
+		height: auto;
+		width: 95%;
+		border: solid 2px @semi-black;
+		border-radius: 25px;
+	}
+}
+
 .hide-show {
 	display: flex;
 }
@@ -863,6 +897,7 @@ table {
 	width: @width-outer;
 	box-sizing: border-box;
 	padding: 0 30px;
+
 	.footer-end-wrap {
 		display: flex;
 		width: @width-inner;
@@ -888,6 +923,7 @@ table {
 			display: flex;
 			justify-content: flex-end;
 			width: 50%;
+
 			a {
 				color: @footer-char;
 				font-size: 22px;
@@ -897,12 +933,16 @@ table {
 	}
 }
 
-@media screen and(max-width:1250px) {
+@media screen and(max-width:1270px) {
 	.main-menu {
 		.nav {
 			ul {
 				li {
 					padding: 0 2%;
+
+					a {
+						font-size: 10pt;
+					}
 				}
 			}
 		}
@@ -911,6 +951,9 @@ table {
 
 @media screen and (max-width:1169px) {
 
+	.responsive-search{
+		display: flex;
+	}
 	.main-menu {
 		.logo {
 			display: none;
@@ -964,15 +1007,15 @@ table {
 			justify-content: center;
 			overflow: hidden;
 			align-items: center;
-			height:190px;
+			height: 190px;
 			margin-top: 2%;
 
 			.banner-right-top {
 				margin-right: 2%;
-				
+
 			}
 
-			
+
 		}
 	}
 
@@ -980,11 +1023,13 @@ table {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.footer-end{
-		.footer-end-wrap{
+
+	.footer-end {
+		.footer-end-wrap {
 			width: 100%;
 		}
 	}
+
 	.footer-main {
 		display: flex;
 		flex-wrap: wrap;
@@ -1100,10 +1145,6 @@ table {
 		}
 	}
 
-	.cart {
-		z-index: -1;
-		opacity: 0;
-	}
 
 	.banners {
 		.banner-left {
@@ -1128,10 +1169,13 @@ table {
 			}
 		}
 	}
-	.footer-end{
-		.footer-end-wrap{
+
+	.footer-end {
+		.footer-end-wrap {
 			flex-direction: column;
-			.footer-end-left,.footer-end-right{
+
+			.footer-end-left,
+			.footer-end-right {
 				width: 100%;
 				justify-content: center;
 				text-align: center;
@@ -1141,6 +1185,22 @@ table {
 }
 
 @media screen and (max-width:560px) {
+	.main-menu {
+		.cart {
+			.cart-inside {
+				margin-top: 0;
+
+				i {
+					font-size: 20px;
+				}
+
+				a {
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+
 	.banners {
 		.banner-left {
 			span {
@@ -1173,6 +1233,22 @@ table {
 }
 
 @media screen and (max-width:395px) {
+	.main-menu {
+		.cart {
+			.cart-inside {
+				margin-top: 0;
+
+				i {
+					font-size: 15px;
+				}
+
+				a {
+					padding-left: 5px;
+				}
+			}
+		}
+	}
+
 	.banners {
 
 		.banner-left {
